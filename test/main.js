@@ -30,22 +30,27 @@ QUnit.module('DOM', (hooks) => {
 
 	test("should have a title element with a class of 'card'", (assert) => {
 		const sectionHeadEl = document.querySelector('.section__head');
-		const cardsSummaryTitleEl = sectionHeadEl.querySelector('.cards-summary__title');
+		const cardsSummaryTitleEl = sectionHeadEl.querySelector(
+			'.cards-summary__title'
+		);
 
 		assert.ok(cardsSummaryTitleEl);
 	});
 
 	test("should have a subtitle element with a class of 'section__subtitle'", (assert) => {
 		const sectionHeadEl = document.querySelector('.section__head');
-		const cardsSummarySubtitleEl =
-			sectionHeadEl.querySelector('.cards-summary__subtitle');
+		const cardsSummarySubtitleEl = sectionHeadEl.querySelector(
+			'.cards-summary__subtitle'
+		);
 
 		assert.ok(cardsSummarySubtitleEl);
 	});
 
 	test("should have a description element with a class of 'section__desc'", (assert) => {
 		const sectionHeadEl = document.querySelector('.section__head');
-		const cardsSummaryDescEl = sectionHeadEl.querySelector('.cards-summary__desc');
+		const cardsSummaryDescEl = sectionHeadEl.querySelector(
+			'.cards-summary__desc'
+		);
 
 		assert.ok(cardsSummaryDescEl);
 	});
